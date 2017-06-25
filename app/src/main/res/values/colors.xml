@@ -4,5 +4,7 @@
     <color name="colorPrimaryDark">#9b00aaff</color>
     <color name="colorAccent">#FF4081</color>
     <color name="myBackgroundColor">#FF000000</color>color>
-    <color name="etBackgroundColor">#67cdffbe</color>color>
+    <color name="etBackgroundColor">#67cdffbe</color>
+
+    <color name="black_overlay">#66000000</color>color>
 </resources>
