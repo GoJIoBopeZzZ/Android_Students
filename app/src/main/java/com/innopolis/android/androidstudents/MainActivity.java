@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Intent intent = null;
         switch (view.getId()) {
             case R.id.btLogin:
-//               player.start();
+               player.start();
                 if (!etLogin.getText().toString().equals("") &&
                         !etPassword.getText().toString().equals("")) {
                     intent = new Intent(this, ManagerActivity.class);
@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     break;
                 }
             case R.id.btRegistration:
+                player.start();
                 intent = new Intent(this, RegistrationActivity.class);
                 startActivity(intent);
                 break;

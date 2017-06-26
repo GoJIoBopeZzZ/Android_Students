@@ -1,6 +1,7 @@
 package com.innopolis.android.androidstudents;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -13,6 +14,7 @@ import android.widget.Toast;
 
 public class RegistrationActivity extends AppCompatActivity implements View.OnClickListener{
     Button btSignIn;
+    private MediaPlayer player;
     EditText etEmail , etLogin, etPassword, etConfirmPassword;
 
     @Override
@@ -47,7 +49,7 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
             Intent intent = null;
             switch (view.getId()) {
                 case R.id.btSignIn:
-//                player.start();
+                player.start();
                     intent = new Intent(this, ManagerActivity.class);
                     startActivity(intent);
                     break;
