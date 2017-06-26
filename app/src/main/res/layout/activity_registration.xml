@@ -1,19 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.innopolis.android.androidstudents.RegistrationActivity">
+    android:background="@drawable/main_background"
+    android:orientation="vertical"
+    tools:context="com.innopolis.android.androidstudents.RegistrationActivity"
+    android:weightSum="1">
 
-    <TextView
-        android:id="@+id/textView"
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_weight="0.5" />
+
+    <EditText
+        android:id="@+id/etEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Registration"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="97dp"
-        tools:layout_editor_absoluteY="16dp" />
-</android.support.constraint.ConstraintLayout>
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/etBackgroundColor"
+        android:ems="10"
+        android:hint="@string/email"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/etLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40dp"
+        android:background="@color/etBackgroundColor"
+        android:ems="10"
+        android:hint="@string/login_text"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:background="@color/etBackgroundColor"
+        android:ems="10"
+        android:hint="@string/password_text"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/etConfirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:background="@color/etBackgroundColor"
+        android:ems="10"
+        android:hint="@string/confirmpassword"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btSignIn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/round_corners"
+        android:text="@string/sing_in"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+</LinearLayout>

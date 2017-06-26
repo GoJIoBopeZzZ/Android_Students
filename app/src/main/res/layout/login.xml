@@ -18,15 +18,15 @@
         android:id="@+id/tvLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login:"
+        android:text="@string/login_text"
         android:textColor="@android:color/white" />
 
     <EditText
         android:id="@+id/etLogin"
-        android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
+        android:layout_weight="1"
         android:background="@color/etBackgroundColor"
         android:ems="10"
         android:inputType="textPersonName"
@@ -38,7 +38,7 @@
         android:id="@+id/tvPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Password:"
+        android:text="@string/password_text"
         android:textColor="@android:color/white" />
 
     <EditText
@@ -49,7 +49,6 @@
         android:layout_marginBottom="20dp"
         android:background="@color/etBackgroundColor"
         android:ems="10"
-        android:inputType="textPersonName"
         android:textSize="30sp"
         android:textStyle="bold" />
 
@@ -64,10 +63,8 @@
             android:id="@+id/btLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_marginRight="10dp"
             android:background="@drawable/round_corners"
-            android:text="Sing In"
+            android:text="@string/sing_in"
             android:textColor="@android:color/black"
             android:textSize="18sp" />
 
@@ -76,10 +73,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:layout_marginLeft="10dp"
             android:background="@drawable/round_corners"
-            android:elevation="0dp"
-            android:text="Registration"
+            android:text="@string/registration"
             android:textAlignment="center"
             android:textColor="@android:color/black"
             android:textSize="18sp" />
