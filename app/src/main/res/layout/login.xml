@@ -14,42 +14,31 @@
         android:layout_height="wrap_content"
         app:srcCompat="@mipmap/ic_launcher" />
 
-    <TextView
-        android:id="@+id/tvLogin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/login_text"
-        android:textColor="@android:color/white" />
-
     <EditText
         android:id="@+id/etLogin"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginBottom="20dp"
         android:layout_weight="1"
         android:background="@color/etBackgroundColor"
         android:ems="10"
+        android:hint="@string/login_text"
         android:inputType="textPersonName"
-        android:textAlignment="viewStart"
-        android:textSize="30sp"
+        android:textSize="24sp"
         android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/tvPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/password_text"
-        android:textColor="@android:color/white" />
 
     <EditText
         android:id="@+id/etPassword"
-        android:layout_weight="1"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginBottom="20dp"
+        android:layout_weight="1"
         android:background="@color/etBackgroundColor"
         android:ems="10"
-        android:textSize="30sp"
+        android:hint="@string/password_text"
+        android:textSize="24sp"
         android:textStyle="bold" />
 
     <RelativeLayout
@@ -63,20 +52,30 @@
             android:id="@+id/btLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/spacer"
             android:background="@drawable/round_corners"
             android:text="@string/sing_in"
             android:textColor="@android:color/black"
-            android:textSize="18sp" />
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/btRegistration"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/spacer"
             android:background="@drawable/round_corners"
             android:text="@string/registration"
-            android:textAlignment="center"
             android:textColor="@android:color/black"
-            android:textSize="18sp" />
+            android:textSize="14sp" />
+
+        <Space
+            android:id="@+id/spacer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="55dp"
+            />
     </RelativeLayout>
 </LinearLayout>

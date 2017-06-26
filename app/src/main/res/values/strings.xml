@@ -8,7 +8,7 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="email">Email</string>
     <string name="sing_in">Sing In</string>
-    <string name="registration">Registration</string>
+    <string name="registration">Create</string>
     <string name="confirmpassword">ConfirmPassword</string>
     <string name="sign_error">Имеются незаполненные поля!!!</string>
 </resources>
