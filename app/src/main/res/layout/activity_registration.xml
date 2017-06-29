@@ -5,9 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/main_background"
+    android:background="@drawable/main_background_old"
     android:orientation="vertical"
-    tools:context="com.innopolis.android.androidstudents.RegistrationActivity"
+    tools:context="com.innopolis.android.androidstudents.Activities.RegistrationActivity"
     android:weightSum="1">
 
     <ImageView
@@ -74,7 +74,7 @@
         android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:background="@drawable/round_corners"
+        android:background="@drawable/button_round_corners"
         android:text="@string/sing_in"
         android:textColor="@android:color/black"
         android:textSize="18sp" />

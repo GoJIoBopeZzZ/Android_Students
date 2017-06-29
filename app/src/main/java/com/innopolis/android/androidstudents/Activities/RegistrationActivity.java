@@ -1,4 +1,4 @@
-package com.innopolis.android.androidstudents;
+package com.innopolis.android.androidstudents.Activities;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
@@ -11,6 +11,8 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.innopolis.android.androidstudents.R;
 
 public class RegistrationActivity extends AppCompatActivity implements View.OnClickListener{
     Button btSignIn;
@@ -49,7 +51,7 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
             Intent intent = null;
             switch (view.getId()) {
                 case R.id.btSignIn:
-                player.start();
+//                player.start();
                     intent = new Intent(this, ManagerActivity.class);
                     startActivity(intent);
                     break;

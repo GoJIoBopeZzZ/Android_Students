@@ -2,9 +2,10 @@
 <resources>
     <color name="colorPrimary">#9b00aaff</color>
     <color name="colorPrimaryDark">#9b00aaff</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#ff0000</color>
     <color name="myBackgroundColor">#FF000000</color>color>
-    <color name="etBackgroundColor">#67e7f451</color>
+    <color name="etBackgroundColor">#7bffffff</color>
+    <color name="trans">#00ffffff</color>
 
     <color name="black_overlay">#66000000</color>color>
 </resources>
